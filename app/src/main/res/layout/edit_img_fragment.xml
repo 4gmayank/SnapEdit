@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <com.star.snapedit.cropview.CropImageView
+        android:id="@+id/picked_img"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="20dp"
+        />
+       <!-- custom:scv_background_color="@color/rangoon"
+        custom:scv_crop_mode="fit_image"
+        custom:scv_frame_color="@color/aquagreen"
+        custom:scv_frame_stroke_weight="1dp"
+        custom:scv_guide_color="@color/aquagreen"
+        custom:scv_guide_show_mode="show_always"
+        custom:scv_guide_stroke_weight="1dp"
+        custom:scv_handle_color="@color/aquagreen"
+        custom:scv_handle_show_mode="show_always"
+        custom:scv_handle_size="14dp"
+        custom:scv_min_frame_size="50dp"
+        custom:scv_overlay_color="@color/overlay"
+        custom:scv_touch_padding="8dp"
+        />
+-->
+
+    <LinearLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/rangoon"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_4dp"
+            android:padding="@dimen/_4dp"
+            android:text="Info"
+            style="@style/AppTheme.Button.FeatureBtn"
+            />
+
+        <Button
+            android:id="@+id/flipX"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_4dp"
+            android:padding="@dimen/_4dp"
+            android:text="Flip X"
+            style="@style/AppTheme.Button.FeatureBtn"
+            />
+
+        <Button
+            android:id="@+id/flipY"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_4dp"
+            android:padding="@dimen/_4dp"
+            android:text="FlipY"
+            style="@style/AppTheme.Button.FeatureBtn"
+            />
+        <Button
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_4dp"
+            android:padding="@dimen/_4dp"
+            android:text="Save"
+            style="@style/AppTheme.Button.FeatureBtn"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
